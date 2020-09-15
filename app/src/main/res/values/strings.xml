@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SuperGitter</string>
+    <string name="search_user">Enter Github Username</string>
+    <string name="add_user">Add user</string>
+    <string name="repository">Repository :</string>
+    <string name="search">Search</string>
+    <string name="users_list">Users</string>
+</resources>

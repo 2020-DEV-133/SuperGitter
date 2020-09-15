@@ -1,0 +1,5 @@
+include ':auth'
+include ':authentication'
+include ':gitrepo'
+include ':app'
+rootProject.name = "SuperGitter"

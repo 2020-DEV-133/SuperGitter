@@ -1,0 +1,15 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.home.userlist.UserListFragment"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/userList_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/dimen16" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
