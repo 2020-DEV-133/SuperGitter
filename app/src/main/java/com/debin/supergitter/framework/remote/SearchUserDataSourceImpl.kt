@@ -1,4 +1,4 @@
-package com.debin.supergitter.framework
+package com.debin.supergitter.framework.remote
 
 import com.debin.supergitter.framework.network.RetrofitClient
 import com.debin.supergitter.gitrepo.data.datasource.UserDataSource
