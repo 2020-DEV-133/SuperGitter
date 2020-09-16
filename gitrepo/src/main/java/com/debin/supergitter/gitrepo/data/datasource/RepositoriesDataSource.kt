@@ -1,7 +1,8 @@
 package com.debin.supergitter.gitrepo.data.datasource
 
 import com.debin.supergitter.gitrepo.domain.Repositories
+import kotlinx.coroutines.Deferred
 
 interface RepositoriesDataSource {
-    suspend fun getRepoListByUser(userName : String) : List<Repositories>
+    suspend fun getRepoListByUserAsync(userName : String) : Deferred<List<Repositories>>
 }

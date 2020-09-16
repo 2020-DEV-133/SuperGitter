@@ -1,7 +1,7 @@
 package com.debin.supergitter.gitrepo.interactors
 
-import com.debin.supergitter.gitrepo.data.repository.RoomRepository
+import com.debin.supergitter.gitrepo.data.repository.RoomRepoRepository
 
-class GetRepoList(private val roomRepository: RoomRepository) {
-    suspend operator fun invoke(userName : String) = roomRepository.getRepoList(userName)
+class GetRepoList(private val roomRepoRepository: RoomRepoRepository) {
+    suspend operator fun invoke(userName : String) = roomRepoRepository.getRepoList(userName)
 }
