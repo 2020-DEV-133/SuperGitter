@@ -5,4 +5,8 @@
     <string name="repository">Repository :</string>
     <string name="search">Search</string>
     <string name="users_list">Users</string>
+    <string name="commitCount">"Commits : "</string>
+    <string name="owner">Owner</string>
+    <string name="open_issues">"Open issues : "</string>
+    <string name="isPrivate">Private</string>
 </resources>

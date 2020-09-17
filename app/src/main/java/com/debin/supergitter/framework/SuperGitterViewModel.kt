@@ -1,0 +1,9 @@
+package com.debin.supergitter.framework
+
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
+
+open class SuperGitterViewModel(application: Application, protected val interactors: Interactors) :
+     AndroidViewModel(application){
+     protected val application : SuperGitterApplication = getApplication()
+}

@@ -1,11 +1,22 @@
-<androidx.constraintlayout.widget.ConstraintLayout
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search">
+
+    <data>
+
+        <variable
+            name="searchViewModel"
+            type="com.debin.supergitter.presentation.home.search.SearchViewModel" />
+    </data>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="@dimen/dimen16"
-    tools:context=".presentation.home.search.SearchFragment">
+    tools:context=".presentation.home.search.SearchFragment"
+    android:padding="@dimen/dimen16">
 
         <EditText
             android:id="@+id/search_user_editText"
@@ -15,7 +26,7 @@
             android:background="@android:drawable/edit_text"
             android:hint="@string/search_user"
             android:paddingStart="@dimen/dimen16"
-            android:text=""
+            android:text="@={searchViewModel.searchUser}"
             app:layout_constraintEnd_toStartOf="@id/search_button"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -26,6 +37,7 @@
             android:layout_height="@dimen/dimen0"
             android:background="@color/colorAccent"
             android:padding="@dimen/dimen4"
+            android:onClick="@{() -> searchViewModel.onSearchButtonClicked()}"
             app:layout_constraintBottom_toBottomOf="@id/search_user_editText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/search_user_editText"
@@ -113,8 +125,10 @@
             android:text="@string/add_user"
             android:textColor="@color/white"
             android:visibility="gone"
+            android:onClick="@{() -> searchViewModel.onAddUserClick()}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+</layout>
